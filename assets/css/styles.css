@@ -17,12 +17,12 @@
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('../fonts/hanken-grotesk_regular.otf');
+    src: url('../fonts/hanken-grotesk_regular.woff2');
     font-weight: 400;
 }
 @font-face {
     font-family: 'HK Grotesk';
-    src: url('../fonts/hanken-grotesk_bold.otf');
+    src: url('../fonts/hanken-grotesk_bold.woff2');
     font-weight: 700;
 }
 html {
