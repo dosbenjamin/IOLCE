@@ -141,12 +141,6 @@ blockquote,
     background-image: url('../images/pattern_cartographer.svg');
     background-size: 1024px;
 }
-.section--bg::before {
-    content: '';
-    background-image: url('../images/pattern_cartographer.svg');
-    background-color: #FAEBEE;
-    background-size: 1024px;
-}
 .section--bgGreen {
     background-color: #055B5C;
 }
@@ -489,7 +483,6 @@ blockquote,
     .section__sideTexts {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
     .section__sideTexts p:first-child {
         margin: 0 2em 0 0;
@@ -546,11 +539,14 @@ blockquote,
         padding-bottom: 0;
     }
     .navBar .section__content {
-        width: 70vw;
-        z-index: 9;
+        width: calc(100% - 8em);
+        padding: 0 4em;
+        max-width: none;
     }
     .menu {
-        z-index: 5;
+        width: calc(100% - 8em);
+        height: calc(100% - 8em);
+        padding: 4em;
     }
     /* L'Homme et la nature */
     .chapter11 {
