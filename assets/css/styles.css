@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/* Reset */
-* {
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-/* Global */
+/* Fonts */
 @font-face {
     font-family: 'Vesper Libre';
     src: url('../fonts/vesper-libre_500.woff2');
@@ -25,64 +15,27 @@
     src: url('../fonts/hanken-grotesk_bold.woff2');
     font-weight: 700;
 }
+/* Global */
 html {
-    color: #000;
-    font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
     font-size: 18px;
+}
+body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     line-height: 1.8;
-}
-ul {
-    list-style-type: none;
-}
-img {
-    object-fit: cover;
-}
-a {
-    text-decoration: none;
+    color: #000;
+    font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
 }
 p,
 ul {
     margin: 0 0 1em 0;
 }
+.list__item:last-child,
 .tiny:last-child,
 p:last-child,
 ul:last-child {
     margin: 0;
-}
-.tiny,
-.link {
-    display: inline-block;
-    font-size: 0.694em;
-    font-weight: 700;
-    letter-spacing: .15rem;
-    line-height: 1.6;
-    margin-bottom: .5rem;
-    text-transform: uppercase;
-}
-.link {
-    color: #055B5C;
-}
-.link--white {
-    color: #fff
-}
-.link--box {
-    background-color: #E17464;
-    height: 3rem;
-    line-height: 3rem;
-    margin: auto;
-    text-align: center;
-    width: calc(100vw - 4rem);
-}
-.link--bordered {
-    background-color: #fff;
-    -webkit-box-shadow: inset 0 0 0 2px #E17464;
-            box-shadow: inset 0 0 0 2px #E17464;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    color: #E17464;
 }
 .title {
     font-family: 'Vesper Libre', Georgia, Times, serif;
@@ -103,24 +56,66 @@ ul:last-child {
     display: block;
     font-size: 1.44em;
     line-height: 1.4;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .title--veryBig {
     font-size: 2.986em;
     line-height: 1.45;
 }
-blockquote,
+.quote__content,
 .list {
     position: relative;
 }
-.list__el::before {
+.quote__content::before {
+    content: "\201C\2009";
+    left: -11.688px;
+    position: absolute;
+}
+.list__item,
+.tiny,
+.link {
+    display: inline-block;
+    font-size: 0.694em;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.list__item--onText {
+    text-transform: initial;
+    letter-spacing: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+.list__item--onText::before {
     content: "\2013\2009";
     left: -12.06px;
     position: absolute;
 }
-.list__link {
-    font-weight: 700;
+.link {
+    color: #055B5C;
+}
+.link--white {
+    color: #fff
+}
+.link--box {
+    background-color: #E17464;
+    line-height: 3rem;
+    margin: auto;
+    text-align: center;
+    width: calc(100vw - 4rem);
+}
+.link--bordered {
+    background-color: #fff;
+    -webkit-box-shadow: inset 0 0 0 2px #E17464;
+            box-shadow: inset 0 0 0 2px #E17464;
+    color: #E17464;
 }
 .caption {
     font-size: 0.833em;
@@ -130,37 +125,48 @@ blockquote,
     top: -11px;
 }
 .section {
+    position: relative;
     padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
 }
-.section--small {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.section--bg {
+.section--bg::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-color: #FAEBEE;
     background-image: url('../images/pattern_cartographer.svg');
     background-size: 1024px;
 }
-.section--bgGreen {
+.section--bgGreen::before {
     background-color: #055B5C;
 }
-.section--bgOrange {
+.section--bgOrange::before {
     background-color: #E17464;
 }
 .section--bgGreen *,
 .section--bgOrange * {
     color: #fff
 }
+.section--bgGreen a {
+    color: #FAEBEE;
+}
+.section--bgOrange a {
+    color: #fff;
+}
 .section--bgGreen .title--underline::after,
 .section--bgOrange .title--underline::after {
     background-color: #fff;
 }
 .imgOverflow {
-    padding-top: calc(4em + 37vw);
+    padding-top: calc(3em + 37vw);
     position: relative;
 }
-.imgOverflow__el {
-    margin: 0;
+.imgOverflow__item {
     position: absolute;
     right: 0;
     top: -17vw;
@@ -170,61 +176,66 @@ blockquote,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
     overflow: scroll;
     position: relative;
-    right: 2em;
+    left: -2em;
     width: 100vw;
-}
-.slider__figure {
-    padding: 0 2em;
-}
-.slider__figure:nth-child(2) {
-    padding: 0;
 }
 .slider::-webkit-scrollbar {
     display: none;
 }
-.slider__img {
-    max-width: 100vw;
+.slider__item:not(:nth-child(2)) {
+    padding: 0 2em;
 }
-@media (max-width: 400px) {
-    .slider__img {
-        height: 7em;
-    }
+/* .slider__item:nth-child(2) {
+    padding: 0;
+} */
+.slider__img {
+    height: 50vw;
+    width: 70vw;
 }
 /* Navigation */
 .navBar {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.navBar .section__content{
+    top: 0;
     height: 3em;
     width: calc(100vw - 4em);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 2em;
-    left: 0;
     position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     z-index: 3;
     justify-content: space-between;
     flex-direction: row;
 }
+.navBar::before {
+    content: '';
+    background-color: #fff;
+    height: 3em;
+    z-index: -1;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 .navBar__logo {
     background-repeat: no-repeat;
     overflow: hidden;
-    text-indent: 200%;
+    text-indent: 9999px;
     white-space: nowrap;
     background-image: url('../images/iolce_logo.svg');
-    height: .5em;
     width: 3em;
+}
+.navBar__logo h1 {
+    margin: 0;
+    height: .5rem;
 }
 .navBar__burger {
     background-color: transparent;
@@ -238,20 +249,22 @@ blockquote,
     will-change: transform;
     background-repeat: no-repeat;
     overflow: hidden;
-    text-indent: 200%;
+    text-indent: 9999px;
     white-space: nowrap;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+.navBar__burger--open {
+    background-image: url('../images/cross_menu.svg');
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
 }
 .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     position: fixed;
     width: calc(100vw - 4em);
     bottom: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     height: calc(100vh - 7em);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -267,29 +280,21 @@ blockquote,
     z-index: 2;
     margin-top: 3em;
 }
-.menu__links {
-    line-height: 0;
-    overflow: scroll;
-}
-.menu__link {
-    display: block;
-    margin-bottom: 2rem;
-}
-.menu__link .link,
-.menu__link:last-child{
-    margin-bottom: 0;
-}
-.navBar__burger--open {
-    background-image: url('../images/cross_menu.svg');
-    -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-            transform: scaleX(-1);
-}
 .menu--open {
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
 }
+.menu .list__item {
+    margin-bottom: 2rem;
+}
+.menu .list__item:last-child {
+    margin: 0;
+}
+.menu a {
+    color: #055B5C;
+}
+
 /* Landing */
 .landing {
     padding-top: 7em;
@@ -298,20 +303,13 @@ blockquote,
 }
 /* L'Homme et la nature */
 .chapter11 {
-    padding-bottom: 10em;
-    padding-bottom: calc(4em + 23vw);
+    padding-bottom: calc(3em + 24vw);
 }
 .chapter12 {
-    padding-top: calc(4em + 50vw);
+    padding-top: calc(3em + 50vw);
 }
-@media (max-width: 390px) {
-    .chapter12 {
-        padding-top: 16em;
-    }
-}
-.chapter12 .imgOverflow__el {
+.chapter12 .imgOverflow__item {
     height: 80vw;
-    left: 0;
     top: -24vw;
     width: 100vw;
 }
@@ -319,7 +317,6 @@ blockquote,
     position: absolute;
 }
 .chapter12 img:first-of-type {
-    left: 0;
     top: 15%;
     width: 65vw;
 }
@@ -329,49 +326,23 @@ blockquote,
 }
 .chapter12 .caption {
     text-align: center;
-    top: 88%;
+    top: 70vw;
 }
 /* La nature et la technologie */
 .chapter22 p:first-of-type {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 /* La technologie et l’Homme */
 .chapter31 {
-    padding-bottom: calc(4em + 17vw);
-}
-.chapter31__quotation::before {
-    content: "\201C\2009";
-    left: -11.688px;
-    position: absolute;
+    padding-bottom: calc(3em + 17vw);
 }
 /* L’Homme, la nature et la technologie */
 .conclusion p:last-child {
     margin-bottom: 1em;
 }
 .conclusion strong {
-    display: block;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     font-weight: 700;
-}
-.endList {
-    color: #055B5C;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    line-height: 0;
-}
-.endList:nth-child(1) {
-    margin-bottom: 1em;
-}
-.endList .tiny:nth-child(2){
-    margin-bottom: 2rem;
-}
-.endList__link {
-    color: #FAEBEE;
 }
 /* Abstract */
 .abstract {
@@ -381,19 +352,27 @@ blockquote,
 .credits {
     margin-top: 3em;
 }
+.credits a {
+    font-weight: 700;
+}
 /* Scroll Fixes */
 .noscroll {
     overflow: hidden;
     position: relative;
 }
+/* section:not(:first-child) {
+    margin-top: -3em;
+    padding-top: 3em;
+}
+section:nth-child(2) {
+    margin-bottom: 3em;
+    margin-top: 0;
+    padding-top: 11em;
+} */
 @media (min-width: 534px){
     /* Global */
-    .link--box {
-        width: calc(50vw - 3rem);
-    }
     .title {
         font-size: 2.488em;
-        margin: 0 0 2rem 0;
     }
     .title--underline::after {
         height: .12em;
@@ -405,44 +384,55 @@ blockquote,
     .title--veryBig {
         font-size: 3.583em;
     }
+    .link--box {
+        width: calc(50vw - 3rem);
+    }
+    .section {
+        padding: 4em 3em;
+    }
+    .imgOverflow {
+        padding-top: calc(4em + 36vw);
+    }
     .slider {
-        right: 3em;
+        left: -3em;
     }
-    .slider__figure {
-        padding: 0 3em;
-    }
-    .slider__figure:nth-child(2) {
-        padding: 0;
-    }
+    .slider__item:not(:nth-child(2)) {
+    padding: 0 3em;
+    }   
     .slider__img {
         width: calc(90vw - 6em);
         height: 50vw;
     }
-    .section {
-        padding-left: 3em;
-        padding-right: 3em;
-    }
     /* Navigation */
     .navBar {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .navBar .section__content {
         width: calc(100vw - 6em);
         padding: 0 3em;
     }
     .menu {
         width: calc(100vw - 6em);
+        height: calc(100vh - 9em);
+        padding: 3em;
     }
     /* Landing */
     .landing {
         height: 60vh;
-        display: flex;
         justify-content: center;
-        align-items: center;
+        padding-top: 7em;
+        padding-bottom: calc(4em + 17vw);
+    }
+    /* L'Homme et la nature */
+    .chapter11 {
+        padding-bottom: calc(4em + 24vw);
+    }
+    .chapter12 {
+        padding-top: calc(4em + 50vw);
+    }
+    /* La technologie et l’Homme */
+    .chapter31 {
+        padding-bottom: calc(4em + 17vw);
     }
     /* L'homme, la nature et la technologie */
-    .conclusion ul:only-of-type {
+    .conclusion__buttons {
         width: calc(100vw - 6rem);
         display: flex;
     }
@@ -456,29 +446,31 @@ blockquote,
         font-size: 2.986em;
         margin: 0 0 3rem 0;
     }
+    .title--underline::after {
+        height: .27rem;
+        margin-top: 1rem;
+    }
     .title--medium {
         font-size: 2.074em;
         margin-bottom: 6rem;
     }
     .title--veryBig {
         font-size: 8vh;
+        margin-bottom: 1rem;
     }
-    .title--underline::after {
-        height: .27rem;
-        margin-top: 1rem;
+    .link--box {
+        width: 100%;
     }
-
     .section {
         padding: 8em 1em;
-    }
-    .section__content {
         width: 85vw;
-        max-width: 1024px;
         margin: auto;
-        right: 0;
-        position: relative;
-        display: flex;
-        flex-direction: column;
+        max-width: 1024px;
+    }
+    .section--bg::before {
+        overflow: hidden;
+        width: 300vw;
+        left: -100%;
     }
     .section__sideTexts {
         display: flex;
@@ -487,123 +479,142 @@ blockquote,
     .section__sideTexts p:first-child {
         margin: 0 2em 0 0;
     }
-    .imgOverflow__el {
-        margin-top: -11em;
-        margin-bottom: 4em;
-        margin-left: auto;
+    .imgOverflow__item {
+        margin: -11em 0 4em auto;
         height: 28vw;
         width: 43vw;
         max-height: 22em;
         max-width: 600px;
         position: initial;
-        right: 0;
     }
     .slider {
-        right: 0;
+        left: 0;
         width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
         text-align: center;
+        margin-bottom: 3em;
     }
-    .slider__figure {
-        padding: 0;
-        width: calc(50% - 1em);
+    .slider__item {
+        width: calc(50% - 1.5em);
     }
-    .slider__figure:last-child {
-        margin-left: 2em;
-    }
-    .slider__figure:nth-child(2) {
+    .slider__item:not(:nth-child(2)) {
         padding: 0;
     }
-    .slider__figure:first-child {
+    .slider__item:first-child {
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
-    .slider__figure:first-child .slider__img {
-        width: 100%;
-        height: 32em;
+    .slider__item:last-child {
+        margin-left: 3em;
     }
     .slider__img {
         width: 100%;
         height: 15em;
     }
-    /* Landing */
-    .landing {
-        height: 70vh;
+    .slider__item:first-child .slider__img {
+        height: 32em;
     }
     /* Navigation */
     .navBar {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .navBar .section__content {
-        width: calc(100% - 8em);
-        padding: 0 4em;
-        max-width: none;
+        width: 85vw;
+        max-width: 1024px;
+        margin: auto;
+        padding: 0;
+        left: 0;
+        right: 0;
     }
     .menu {
         width: calc(100% - 8em);
         height: calc(100% - 8em);
+        max-width: unset;
         padding: 4em;
+    }
+    .menu::before {
+        left: 0;
+    }
+    /* Landing */
+    .landing {
+        height: 70vh;
     }
     /* L'Homme et la nature */
     .chapter11 {
-        padding-bottom: 11em;
+        padding-bottom: 12em;
     }
-    .chapter12 .imgOverflow__el {
+    .chapter12 .imgOverflow__item {
         width: 70%;
         position: relative;
-        height: 37vw;
+        height: 36vw;
         max-height: 35em;
-        top: -12em;
-        margin: auto;
+        top: -8em;
+        margin: -4em 0 4em auto;
         max-width: inherit;
     }
-    .chapter12 .imgOverflow__el img:first-of-type {
+    .chapter12 .imgOverflow__item img:first-of-type {
         width: 33vw;
-        height: auto;
-        max-width: 600px;
+        height: 23vw;
+        max-width: 450px;
         max-height: 24em;
         top: 5%;
     }
-    .chapter12 .imgOverflow__el img:last-of-type {
+    .chapter12 .imgOverflow__item img:last-of-type {
         width: 28vw;
-        max-width: 500px;
+        max-width: 400px;
         height: 100%;
-        max-height: 35em
+        max-height: 30em
     }
-    .chapter12 .imgOverflow__el .caption {
-        position: absolute;
+    .chapter12 .imgOverflow__item .caption {
         top: 100%;
-        bottom: 0;
         width: 100%;
-        text-align: center;
+        text-align: right;
         height: 25px;
     }
     .chapter12 p {
-        margin-top: calc(-17% + 3em);
+        margin: calc(-37% + 8em) 0 0 0;
     }
-    /* La technologie et l'homme */
+    /* La technologie et l’Homme */
     .chapter31 {
         padding-bottom: 11em;
     }
     /* L'homme, la nature et la technologie */
+    .conclusion .section__sideTexts {
+        margin-bottom: 2em;
+    }
     .conclusion p:last-child {
         margin-bottom: 0;
     }
-    .conclusion .section__sideTexts {
-        margin-bottom: 1em;
-    }
-    .conclusion ul:only-of-type {
+    .conclusion__buttons {
         width: 85vw;
         max-width: 1024px;
     }
-    .conclusion ul:only-of-type li {
+    .conclusion__buttons li {
         width: 100%;
     }
-    .link--box {
-        width: 100%;
+    /* Abstract */
+    .abstract {
+        margin-top: 3em;
+        align-items: center;
+    }
+    .abstract .title {
+        width: 500px;
+    }
+    /* Credits */
+    .credits {
+        margin-top: 3em;
+        align-items: flex-start;
+    }
+    .credits__links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .credits__links .list {
+        margin-right: 3em;
+        margin-bottom: 2em;
+    }
+}
+@media (min-width: 1500px){
+    .chapter12 .imgOverflow__item .caption {
+        top: 540px;
     }
 }

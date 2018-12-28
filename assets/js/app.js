@@ -1,7 +1,7 @@
 //Menu Opening
 const burger = document.querySelector('.navBar__burger');
 const menu = document.querySelector('.menu');
-const menuLinks = document.querySelectorAll('.menu__links');
+const menuLinks = document.querySelectorAll('.menu .list__item');
 const body = document.querySelector('body');
 const logo = document.querySelector('.navBar__logo');
 (burger).addEventListener('click', function () {

@@ -41,28 +41,29 @@
         <link rel="manifest" href="assets/favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#055B5C">
         <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/styles.css">
         <!-- JavaScript -->
         <script async src="assets/js/app.js"></script>
     </head>
     <body>
         <!-- Navigation -->
-        <header class="section navBar">
-            <div class="section__content">
-                <a href="#accueil"><h1 class="navBar__logo">iolce</h1></a>
+        <header>
+            <div class="section navBar">
+                <a class="navBar__logo" href="#accueil"><h1>iolce</h1></a>
                 <button class="navBar__burger">menu</button>
             </div>
             <nav class="section section--bg menu">
-                <ul class="menu__links">
-                        <li class="menu__link"><a class="link" href="#partie1">L'Homme<br> et la nature</a></li>
-                        <li class="menu__link"><a class="link" href="#partie2">La nature<br> et la technologie</a></li>
-                        <li class="menu__link"><a class="link" href="#partie3">La technologie<br> et l'Homme</a></li>
-                        <li class="menu__link"><a class="link" href="#conclusion">L'Homme, la nature<br> et la technologie</a></li>
-                        <li class="menu__link"><a class="link" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                        <li class="menu__link"><a class="link" href="html/abstract.html">Abstract</a></li>
-                        <li class="menu__link"><a class="link" href="html/credits.html">Crédits</a></li>
+                <ul class="list">
+                    <li class="list__item"><a href="#partie1">L'Homme<br> et la nature</a></li>
+                    <li class="list__item"><a href="#partie2">La nature<br> et la technologie</a></li>
+                    <li class="list__item"><a href="#partie3">La technologie<br> et l'Homme</a></li>
+                    <li class="list__item"><a href="#conclusion">L'Homme, la nature<br> et la technologie</a></li>
+                    <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
+                    <li class="list__item"><a href="html/abstract.html">Abstract</a></li>
+                    <li class="list__item"><a href="html/credits.html">Crédits</a></li>
                 </ul>
             </nav>
         </header>
@@ -70,15 +71,12 @@
         <main>
             <!-- Landing -->
             <section id="accueil" class="section section--bg section--bgGreen landing">
-                <div class="section__content">
-                    <h2 class="title title--veryBig">The<br> Internet<br> of Natural<br> Things</h2>
-                    <small class="tiny">Compte rendu d’une conférence&nbsp;de&nbsp;S.&#8239;Collison</small>
-                </div>
+                <h2 class="title title--veryBig">The<br> Internet<br> of Natural<br> Things</h2>
+                <small class="tiny">Compte rendu d’une conférence&nbsp;de&nbsp;S.&#8239;Collison</small>
             </section>
             <!-- Simon Collison à Beyond Tellerand -->
             <section class="section imgOverflow">
-                <div class="section__content">
-                    <img class="imgOverflow__el"
+                    <img class="imgOverflow__item"
                            src="assets/images/collison.jpg"
                         srcset="assets/images/collison@2x.jpg 2x"
                            alt="Photo de Simon Collison">
@@ -92,11 +90,9 @@
                             l’associant à la nature.
                         </p>
                    </div>
-                </div>
             </section>
             <!-- The Internet of Things ? -->
             <section class="section section--bg">
-                <div class="section__content section__content--indent">
                     <h3 class="title title--underline">&ldquo;&#8239;The Internet<br> of Things&#8239;&rdquo;&#8239;?</h3>
                     <p>
                         &ldquo;&#8239;The Internet of Things&#8239;&rdquo; ou &laquo;&#8239;l’Internet des objets&#8239;&raquo; est une théorie
@@ -104,24 +100,19 @@
                         elles-mêmes ou leurs environnements, formant un écosystème d’objets, de communications d’applications et d’analyses des
                         données.
                     </p>
-                </div>
-
             </section>
             <!-- L'homme et la nature -->
             <section id="partie1">
                 <div class="section section--bg section--bgOrange chapter11">
-                    <div class="section__content">
                         <small class="tiny">Partie I</small>
                         <h3 class="title title--underline">L’Homme<br> et la nature</h3>
                         <p>
                             La vision de la nature a évolué au fil du temps, les sociétés ont altéré l’image qu’elle s’en faisait en fonction de
                             son rapport avec elle.
                         </p>
-                    </div>
                 </div>
                 <div class="section chapter12 imgOverflow">
-                    <div class="section__content">
-                        <figure class="imgOverflow__el">
+                        <figure class="imgOverflow__item">
                             <img src="assets/images/friedrich_painting1.jpg"
                               srcset="assets/images/friedrich_painting1@2x.jpg 2x"
                                  alt="Peinture &ldquo;&#8239;Wanderer above the Sea of Fog&#8239;&rdquo; de Caspar David Friedrich">
@@ -135,13 +126,11 @@
                             l’entourent. Pour lui, la nature est synonyme de bien-être élémentaire. Elle joue un rôle sur son comportement et ses
                             capacités, ses émotions et sentiments sont affectés lorsqu’il est dans la nature.
                         </p>
-                    </div>
                 </div>
                 <div class="section section--bg section--bgGreen">
-                    <div class="section__content">
                         <h4 class="title title--medium">Cette influence<br> a été comprise<br> par plusieurs sociétés</h4>
                         <ul class="slider">
-                            <li class="slider__figure">
+                            <li class="slider__item">
                                 <figure>
                                     <img class="slider__img"
                                            src="assets/images/wallpaper_macos.jpg"
@@ -152,18 +141,16 @@
                                 </figcaption>
                                 </figure>
                             </li>
-                            <li class="slider__figure">
+                            <li class="slider__item">
                                 <figure>
                                     <img class="slider__img"
                                            src="assets/images/forest_bathing.jpg"
-                                        srcset="assets/images/forest_bathing@2x.jpg 2x,
-                                                assets/images/forest_bathing@3x.jpg 3x,
-                                                assets/images/forest_bathing@4x.jpg 4x"
+                                        srcset="assets/images/forest_bathing@2x.jpg 2x"
                                            alt="Photo illustrant la thérapie forestière">
-                                <figcaption class="caption"> Des thérapies forestières sont organisées au Japon et en Corée du Sud.</figcaption>
+                                <figcaption class="caption"> Des thérapies forestières sont organisées au&nbsp;Japon&nbsp;et&nbsp;en&nbsp;Corée&nbsp;du&nbsp;Sud.</figcaption>
                                 </figure>
                             </li>
-                            <li class="slider__figure">
+                            <li class="slider__item">
                                 <figure>
                                     <img class="slider__img"
                                           src="assets/images/munich_park.jpg"
@@ -181,32 +168,39 @@
                                 différente.
                             </p>
                             <ul class="list">
-                                <li class="list__el">Apprentissage plus ludique;&nbsp;</li>
-                                <li class="list__el">améliorer la santé physique et mentale;&nbsp;</li>
-                                <li class="list__el">faire face plus facilement aux traumatismes.</li>
+                                <li class="list__item list__item--onText">Apprentissage plus ludique;&nbsp;</li>
+                                <li class="list__item list__item--onText">améliorer la santé physique et mentale;&nbsp;</li>
+                                <li class="list__item list__item--onText">faire face plus facilement aux traumatismes.</li>
                             </ul>
                         </div>
-                    </div>
                 </div>
             </section>
             <!-- La nature et la technologie -->
             <section id="partie2">
                 <div class="section section--bg">
-                    <div class="section__content section__content--indent">
                         <small class="tiny">Partie II</small>
                         <h3 class="title title--underline">La nature et<br> la technologie</h3>
                         <p>
                             L’Homme seul dans la nature est limité à ce qu’il voit, connaît et croit comprendre, mais avec l’aide de la
                             technologie, il accède à plus d’informations qui lui offrent la possibilité de mieux appréhender le monde environnant.
                         </p>
-                    </div>
                 </div>
                 <div class="section chapter22">
-                    <div class="section__content">
                         <h4 class="title title--medium">S’orienter vers<br> un système qui unit</h4>
                         <p>Homme, nature et technologie nous permettrait de récolter toutes sortes de données.</p>
                         <ul class="slider">
-                            <li class="slider__figure">
+                            <li class="slider__item">
+                               <figure>
+                                   <img class="slider__img"
+                                          src="assets/images/animal_tracking.jpg"
+                                       srcset="assets/images/animal_tracking@2x.jpg 2x"
+                                           alt="Puce GPS installée sur une abeille">
+                                   <figcaption class="caption">
+                                       Tracking d’animaux à l’aide de puces GPS, qui permettent de visualiser leurs déplacements sur une carte, voir leurs habitudes, etc.
+                                   </figcaption>
+                               </figure>
+                            </li>
+                            <li class="slider__item">
                                 <figure>
                                     <img class="slider__img"
                                            src="assets/images/vr_exploration.jpg"
@@ -217,18 +211,7 @@
                                     </figcaption>
                                 </figure>
                             </li>
-                            <li class="slider__figure">
-                                <figure>
-                                    <img class="slider__img"
-                                           src="assets/images/animal_tracking.jpg"
-                                        srcset="assets/images/animal_tracking@2x.jpg 2x"
-                                            alt="Puce GPS installée sur une abeille">
-                                    <figcaption class="caption">
-                                        Tracking d’animaux à l’aide de puces GPS, qui permettent de visualiser leurs déplacements sur une carte, voir leurs habitudes, etc.
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="slider__figure">
+                            <li class="slider__item">
                                 <figure>
                                     <img class="slider__img"
                                            src="assets/images/plants_scanning.jpg"
@@ -244,7 +227,6 @@
                             Les technologies présentées dans les exemples ci-dessus génèrent et complètent des bases de données scientifiques,
                             grâce auxquelles les designers et ingénieurs peuvent contribuer au bien-être de l’humanité.
                         </p>
-                    </div>
                 </div>
                 <div class="section section--bg section--bgOrange">
                     <div class="section__content section__sideTexts">
@@ -264,21 +246,18 @@
             <!-- La technologie et l’Homme -->
             <section id="partie3">
                 <div class="section section--bg section--bgGreen chapter31">
-                    <div class="section__content">
                         <small class="tiny">Partie III</small>
                         <h3 class="title title--underline">La technologie<br> et l’Homme</h3>
-                        <blockquote>
-                            <p class="chapter31__quotation">
+                        <blockquote class="quote">
+                            <p class="quote__content">
                                 Our computers should be like our childhood, an invisible foundation that is quickly forgotten, but always with us and
                                 effortlessly used throughout our lives.&#8239;&rdquo;
                             </p>
                             <cite>&mdash;&nbsp;Mark Weiser</cite>
                         </blockquote>
-                    </div>
                 </div>
                 <div class="section imgOverflow">
-                    <div class="section__content">
-                        <img class="imgOverflow__el"
+                        <img class="imgOverflow__item"
                                src="assets/images/google_assistant.png"
                             srcset="assets/images/google_assistant@2x.png 2x"
                                alt="Exemple d'interaction avec Google Assistant">
@@ -297,13 +276,11 @@
                                 indispensable à notre quotidien.
                             </p>
                         </div>
-                    </div>
                 </div>
             </section>
             <!--L’Homme, la nature et la technologie -->
             <section id="conclusion" class="conclusion">
                 <div class="section section--bg">
-                    <div class="section__content">
                         <small class="tiny">Conclusion</small>
                         <h3 class="title title--underline">L’Homme, <br> la nature et <br> la technologie</h3>
                         <p>
@@ -312,10 +289,8 @@
                             nous apporte santé et bien-être. Ainsi, retrouver un équilibre entre l’Homme et la nature est possible grâce aux
                             technologies.
                         </p>
-                    </div>
                 </div>
                 <div class="section">
-                    <div class="section__content">
                         <div class="section__sideTexts">
                             <p>
                                 Voilà pourquoi, un nouvel écosystème réunissant Homme, nature et technologie, aurait un impact bénéfique sur la plupart
@@ -333,30 +308,27 @@
                             Nous devons développer les technologies avec et autour de la nature, ce n’est pas à elle de s’adapter, c’est à nous de
                             l’adopter.
                         </strong>
-                         <ul>
-                             <li><a class="link link--white link--box" href="https://vimeo.com/251356531">Voir la conférence</a></li>
+                         <ul class="conclusion__buttons">
+                             <li><a class="link link--white link--box" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/251356531">Voir la conférence</a></li>
                              <li><a class="link link--box link--bordered" href="#accueil">Retour en haut</a></li>
                          </ul>
-                    </div>
                 </div>
             </section>
         </main>
         <!-- Footer -->
         <footer class="section section--bg section--bgGreen">
-            <div class="section__content">
                 <noscript>
-                    <ul class="endList">
-                        <li><a class="link endList__link" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                        <li><a class="link endList__link" href="html/abstract.html">Abstract</a></li>
-                        <li><a class="link endList__link" href="html/credits.html">Crédits</a></li>
+                    <ul class="list">
+                        <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
+                        <li class="list__item"><a href="html/abstract.html">Abstract</a></li>
+                        <li class="list__item"><a href="html/credits.html">Crédits</a></li>
                     </ul>
                 </noscript>
-                <ul class="endList">
-                    <li class="tiny">Réalisé avec &hearts;</li>
-                    <li class="tiny">Par <a class="endList__link" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
-                    <li class="tiny"><a class="endList__link" href="http://www.dwm.re">DWM</a> &#124; <a class="end-list__link" href="https://www.heaj.be">HEAJ</a> &copy;</li>
+                <ul class="list">
+                    <li class="list__item">Réalisé avec &hearts;</li>
+                    <li class="list__item">Par <a target="_blank" rel="noopener noreferrer" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
+                    <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="http://www.dwm.re">DWM</a> &#124; <a target="_blank" rel="noopener noreferrer" href="https://www.heaj.be">HEAJ</a> &copy;</li>
                 </ul>
-            </div>
         </footer>
     </body>
 </html>

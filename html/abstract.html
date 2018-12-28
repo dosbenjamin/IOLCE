@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Abstract de la conférence &laquo;&#8239;The Internet of Natural Things&#8239;&raquo;.">
         <meta name="author" content="Benjamin Dos Santos">
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="index, nofollow">
         <!-- Google / Search Engine Tags -->
         <meta itemprop="name" content="Abstract | The Internet of Natural Things | IOLCE">
         <meta itemprop="description" content="Abstract de la conférence &laquo;&#8239;The Internet of Natural Things&#8239;&raquo;.">
@@ -41,22 +41,25 @@
         <link rel="manifest" href="../assets/favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="../assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#055B5C">
         <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/normalize.css">
         <link rel="stylesheet" href="../assets/css/styles.css">
         <!-- JavaScript -->
         <script async src="../assets/js/app.js"></script>
     </head>
     <body>
         <!-- Navigation -->
-        <header class="section navBar">
-            <a href="../index.html"><h1 class="navBar__logo">iolce</h1></a>
-            <button class="navBar__burger">menu</button>
+        <header>
+            <div class="section navBar">
+                <a class="navBar__logo" href="../index.html"><h1>iolce</h1></a>
+                <button class="navBar__burger">menu</button>
+            </div>
             <nav class="section section--bg menu">
-                <ul class="menu__links">
-                    <li class="menu__link"><a class="link" href="../index.html">Récit</a></li>
-                    <li class="menu__link"><a class="link" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                    <li class="menu__link"><a class="link" href="credits.html">Crédits</a></li>
+                <ul class="list">
+                    <li class="list__item"><a href="../index.html">Récit</a></li>
+                    <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
+                    <li class="list__item"><a href="credits.html">Crédits</a></li>
                 </ul>
             </nav>
         </header>
@@ -81,16 +84,16 @@
         <!-- Footer -->
         <footer class="section section--bg section--bgGreen">
             <noscript>
-                <ul class="endList">
-                    <li><a class="link endList__link" href="../index.html">Récit</a></li>
-                    <li><a class="link endList__link" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                    <li><a class="link endList__link" href="credits.html">Crédits</a></li>
+                <ul class="list">
+                    <li class="list__item"><a href="../index.html">Récit</a></li>
+                    <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
+                    <li class="list__item"><a href="credits.html">Crédits</a></li>
                 </ul>
             </noscript>
-            <ul class="endList">
-                <li class="tiny">Réalisé avec &hearts;</li>
-                <li class="tiny">Par <a class="endList__link" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
-                <li class="tiny"><a class="endList__link" href="http://www.dwm.re">DWM</a> &#124; <a class="end-list__link" href="https://www.heaj.be">HEAJ</a> &copy;</li>
+            <ul class="list">
+                <li class="list__item">Réalisé avec &hearts;</li>
+                <li class="list__item">Par <a target="_blank" rel="noopener noreferrer" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
+                <li class="list__item"><a target="_blank" rel="noopener noreferrer" href="http://www.dwm.re">DWM</a> &#124; <a target="_blank" rel="noopener noreferrer" href="https://www.heaj.be">HEAJ</a> &copy;</li>
             </ul>
         </footer>
     </body>
