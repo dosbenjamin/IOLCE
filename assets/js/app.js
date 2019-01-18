@@ -1,13 +1,15 @@
 //Menu Opening
 const burger = document.querySelector('.navBar__burger');
 const menu = document.querySelector('.menu');
-const menuLinks = document.querySelectorAll('.menu .list__item');
+const menuLinks = document.querySelectorAll('.menu .upList__item');
 const body = document.querySelector('body');
 const logo = document.querySelector('.navBar__logo');
+const desktopNav = document.querySelector('.navBar__menuDesktop');
 (burger).addEventListener('click', function () {
 	menu.classList.toggle('menu--open');
 	body.classList.toggle('noscroll');
 	burger.classList.toggle('navBar__burger--open');
+	desktopNav.classList.toggle('navBar__menuDesktop--hide');
 });
 logo.addEventListener('click', function () {
 	menu.classList.remove('menu--open');
@@ -19,6 +21,7 @@ for (let i = 0; i < menuLinks.length; i++) {
 		menu.classList.remove('menu--open');
 		body.classList.remove('noscroll');
 		burger.classList.remove('navBar__burger--open');
+		desktopNav.classList.remove('navBar__menuDesktop--hide');
 	});
 };
 // Smooth Scroll
