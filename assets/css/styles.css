@@ -716,6 +716,11 @@ ul:last-child {
         -ms-transform: scaleX(-1);
             transform: scaleX(-1);
 }
+.navBar__burger::after {
+    content: '';
+    display: none;
+    background-image: url('../images/cross_menu.svg');
+}
 .navBar__menuDesktop {
     visibility: hidden;
 }
