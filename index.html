@@ -1,357 +1,387 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head itemscope>
-        <!-- Base -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Récit | The Internet of Natural Things | IOLCE</title>
-        <meta name="description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard.">
-        <meta name="author" content="Benjamin Dos Santos">
-        <meta name="robots" content="index, nofollow">
-        <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="Récit | The Internet of Natural Things | IOLCE">
-        <meta itemprop="description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard.">
-        <meta itemprop="image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png">
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="http://benjamindossantos.be/projets/iolce">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Récit | The Internet of Natural Things | IOLCE">
-        <meta property="og:description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard.">
-        <meta property="og:image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png">
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Récit | The Internet of Natural Things | IOLCE">
-        <meta name="twitter:description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard.">
-        <meta name="twitter:image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png">
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#055B5C">
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/normalize.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <!-- JavaScript -->
-        <script async src="assets/js/app.js"></script>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <header>
-            <div class="navBar">
-                <a class="navBar__logo" href="#accueil"><h1 class="navBar__title">iolce</h1></a>
-                <nav class="navBar__menuDesktop">
-                    <ul class="upList">
-                        <li class="upList__item"><a class="link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                        <li class="upList__item"><a class="link" href="html/abstract.html">Abstract</a></li>
-                        <li class="upList__item"><a class="link" href="html/credits.html">Crédits</a></li>
-                    </ul>
-                </nav>
-                <button class="navBar__burger">menu</button>
+  <head itemscope>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Récit | The Internet of Natural Things | IOLCE</title>
+    <meta name="description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard." />
+    <meta name="author" content="Benjamin Dos Santos" />
+    <meta name="robots" content="index, nofollow" />
+    <link rel="canonical" href="https://benjamindossantos.be/projets/iolce" />
+    <meta itemprop="name" content="Récit | The Internet of Natural Things | IOLCE" />
+    <meta itemprop="description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard." />
+    <meta itemprop="image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png" />
+    <meta property="og:url" content="http://benjamindossantos.be/projets/iolce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Récit | The Internet of Natural Things | IOLCE" />
+    <meta property="og:description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard." />
+    <meta property="og:image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Récit | The Internet of Natural Things | IOLCE" />
+    <meta name="twitter:description" content="IOLCE est un workshop de la section Design Web & Mobile à la Haute École Albert Jacquard." />
+    <meta name="twitter:image" content="http://www.benjamindossantos.be/projets/iolce/assets/images/cover.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#055B5C" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navBar">
+        <a class="navBar__logo" href="#accueil"><h1 class="navBar__title">iolce</h1></a>
+        <nav class="navBar__menuDesktop">
+          <ul class="upList">
+            <li class="upList__item"><a class="link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
+            <li class="upList__item"><a class="link" href="abstract.html">Abstract</a></li>
+            <li class="upList__item"><a class="link" href="credits.html">Crédits</a></li>
+          </ul>
+        </nav>
+        <button class="navBar__burger">menu</button>
+      </div>
+      <nav class="section section--bg menu">
+        <ul class="upList__list">
+          <li class="upList__item">
+            <a class="link link--orange" href="#partie1">L'Homme<span class="lineBreak"></span> et la nature</a>
+          </li>
+          <li class="upList__item">
+            <a class="link link--orange" href="#partie2">La nature<span class="lineBreak"></span> et la technologie</a>
+          </li>
+          <li class="upList__item">
+            <a class="link link--orange" href="#partie3">La technologie<span class="lineBreak"></span> et l'Homme</a>
+          </li>
+          <li class="upList__item">
+            <a class="link link--orange" href="#conclusion">L'Homme, la nature<span class="lineBreak"></span> et la technologie</a>
+          </li>
+          <li class="upList__item upList__item--desktop">
+            <a class="link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a>
+          </li>
+          <li class="upList__item upList__item--desktop"><a class="link" href="abstract.html">Abstract</a></li>
+          <li class="upList__item upList__item--desktop"><a class="link" href="credits.html">Crédits</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="accueil" class="section section--bg section--bgGreen landing">
+        <h2 class="title title--veryBig">
+          The<span class="lineBreak lineBreak--notDesktop"></span> Internet<span class="lineBreak"></span> of Natural<span class="lineBreak lineBreak--notDesktop"></span> Things
+        </h2>
+        <small class="tiny">Compte rendu d’une conférence&nbsp;de&nbsp;S.&#8239;Collison</small>
+      </section>
+      <section class="section">
+        <img class="imgOverflow" srcset="assets/images/collison.jpg 1x, assets/images/collison@2x.jpg 2x" src="assets/images/collison.jpg" alt="Photo de Simon Collison" />
+        <h3 class="title title--underline">
+          Simon Collison<span class="lineBreak"></span> à Beyond<span class="lineBreak lineBreak--notDesktop"></span>
+          Tellerand
+        </h3>
+        <div class="section__sideTexts">
+          <p>Simon Collison est designer et conférencier. Il affirme qu’un designer doit prendre soin des arts et de l’humain.</p>
+          <p>
+            &ldquo;&#8239;The Internet of Natural Things&#8239;&rdquo; est une conférence présentée par Simon Collison lors du Beyond Tellerand se déroulant du 15 au 17 janvier 2018 à
+            Munich. C’est durant cette présentation que Simon a développé son point de vue et ses théories à propos de &ldquo;&#8239;The Internet of Things&#8239;&rdquo; en l’associant à la
+            nature.
+          </p>
+        </div>
+      </section>
+      <section class="section section--bg">
+        <h3 class="title title--underline">&ldquo;&#8239;The Internet<span class="lineBreak"></span>of Things&#8239;&rdquo;&#8239;?</h3>
+        <p>
+          &ldquo;&#8239;The Internet of Things&#8239;&rdquo; ou &laquo;&#8239;l’Internet des objets&#8239;&raquo; est une théorie dans laquelle l’objet devient un réseau physique intégrant
+          des technologies qui détectent ou interagissent avec elles-mêmes ou leurs environnements, formant un écosystème d’objets, de communications d’applications et d’analyses des
+          données.
+        </p>
+      </section>
+      <section id="partie1">
+        <div class="section section--bg section--bgOrange chapter11">
+          <small class="tiny">Partie I</small>
+          <h3 class="title title--underline">L’Homme<span class="lineBreak"></span>et la nature</h3>
+          <p>La vision de la nature a évolué au fil du temps, les sociétés ont altéré l’image qu’elle s’en faisait en fonction de son rapport avec elle.</p>
+        </div>
+        <div class="section">
+          <figure class="paints">
+            <div class="paints__container">
+              <img
+                class="paints__item"
+                srcset="assets/images/friedrich_painting1.jpg 1x, assets/images/friedrich_painting1@2x.jpg 2x"
+                src="assets/images/friedrich_painting1.jpg"
+                alt="Peinture &ldquo;&#8239;Wanderer above the Sea of Fog&#8239;&rdquo; de Caspar David Friedrich"
+              />
+              <img
+                class="paints__item"
+                srcset="assets/images/friedrich_painting2.jpg 1x, assets/images/friedrich_painting2@2x.jpg 2x"
+                src="assets/images/friedrich_painting2.jpg"
+                alt="Peinture &ldquo;&#8239;Beyond the Infinite&#8239;&rdquo; de Caspar David Friedrich"
+              />
             </div>
-            <nav class="section section--bg menu">
-                <ul class="upList__list">
-                    <li class="upList__item"><a class="link link--orange" href="#partie1">L'Homme<br> et la nature</a></li>
-                    <li class="upList__item"><a class="link link--orange" href="#partie2">La nature<br> et la technologie</a></li>
-                    <li class="upList__item"><a class="link link--orange" href="#partie3">La technologie<br> et l'Homme</a></li>
-                    <li class="upList__item"><a class="link link--orange" href="#conclusion">L'Homme, la nature<br> et la technologie</a></li>
-                    <li class="upList__item upList__item--desktop"><a class="link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                    <li class="upList__item upList__item--desktop"><a class="link" href="html/abstract.html">Abstract</a></li>
-                    <li class="upList__item upList__item--desktop"><a class="link" href="html/credits.html">Crédits</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Content -->
-        <main>
-            <!-- Landing -->
-            <section id="accueil" class="section section--bg section--bgGreen landing">
-                <h2 class="title title--veryBig">The<br> Internet<br> of Natural<br> Things</h2>
-                <small class="tiny">Compte rendu d’une conférence&nbsp;de&nbsp;S.&#8239;Collison</small>
-            </section>
-            <!-- Simon Collison à Beyond Tellerand -->
-            <section class="section">
-                <img class="imgOverflow"
-                    srcset="assets/images/collison.jpg 1x,
-                            assets/images/collison@2x.jpg 2x"
-                       src="assets/images/collison.jpg"
-                       alt="Photo de Simon Collison">
-               <h3 class="title title--underline">Simon Collison<br> à Beyond<br> Tellerand</h3>
-               <div class="section__sideTexts">
-                    <p>Simon Collison est designer et conférencier. Il affirme qu’un designer doit prendre soin des arts et de l’humain.</p>
-                    <p>
-                        &ldquo;&#8239;The Internet of Natural Things&#8239;&rdquo; est une conférence présentée par Simon Collison lors du
-                        Beyond Tellerand se déroulant du 15 au 17 janvier 2018 à Munich. C’est durant cette présentation que Simon a
-                        développé son point de vue et ses théories à propos de &ldquo;&#8239;The Internet of Things&#8239;&rdquo; en
-                        l’associant à la nature.
-                    </p>
-               </div>
-            </section>
-            <!-- The Internet of Things ? -->
-            <section class="section section--bg">
-                <h3 class="title title--underline">&ldquo;&#8239;The Internet<br> of Things&#8239;&rdquo;&#8239;?</h3>
-                <p>
-                    &ldquo;&#8239;The Internet of Things&#8239;&rdquo; ou &laquo;&#8239;l’Internet des objets&#8239;&raquo; est une théorie
-                    dans laquelle l’objet devient un réseau physique intégrant des technologies qui détectent ou interagissent avec
-                    elles-mêmes ou leurs environnements, formant un écosystème d’objets, de communications d’applications et d’analyses des
-                    données.
-                </p>
-            </section>
-            <!-- L'homme et la nature -->
-            <section id="partie1">
-                <div class="section section--bg section--bgOrange chapter11">
-                    <small class="tiny">Partie I</small>
-                    <h3 class="title title--underline">L’Homme<br> et la nature</h3>
-                    <p>
-                        La vision de la nature a évolué au fil du temps, les sociétés ont altéré l’image qu’elle s’en faisait en fonction de
-                        son rapport avec elle.
-                    </p>
-                </div>
-                <div class="section">
-                    <figure class="paints">
-                        <div class="paints__container">
-                            <img class="paints__item"
-                           srcset="assets/images/friedrich_painting1.jpg 1x,
-                                   assets/images/friedrich_painting1@2x.jpg 2x"
-                              src="assets/images/friedrich_painting1.jpg"
-                              alt="Peinture &ldquo;&#8239;Wanderer above the Sea of Fog&#8239;&rdquo; de Caspar David Friedrich">
-                            <img class="paints__item"
-                                srcset="assets/images/friedrich_painting2.jpg 1x,
-                                        assets/images/friedrich_painting2@2x.jpg 2x"
-                                   src="assets/images/friedrich_painting2.jpg"
-                                   alt="Peinture &ldquo;&#8239;Beyond the Infinite&#8239;&rdquo; de Caspar David Friedrich">
-                        </div>
-                        <figcaption class="caption">La nature vue par l’artiste Caspar&nbsp;David&nbsp;Friedrich.</figcaption>
-                    </figure>
-                    <p>
-                        L’Homme est influencé par la nature, c’est à dire le monde physique, l’univers, l’ensemble des choses et des êtres qui
-                        l’entourent. Pour lui, la nature est synonyme de bien-être élémentaire. Elle joue un rôle sur son comportement et ses
-                        capacités, ses émotions et sentiments sont affectés lorsqu’il est dans la nature.
-                    </p>
-                </div>
-                <div class="section section--bg section--bgGreen">
-                    <h4 class="title title--medium">Cette influence<br> a été comprise<br> par plusieurs sociétés</h4>
-                    <ul class="slider">
-                        <li class="slider__item">
-                            <figure>
-                                <img class="slider__img"
-                                    srcset="assets/images/wallpaper_macos.jpg 1x,
-                                            assets/images/wallpaper_macos@2x.jpg 2x"
-                                       src="assets/images/wallpaper_macos.jpg"
-                                       alt="Fond d'écran MacOS Mojave">
-                                <figcaption class="caption">
-                                    Apple, Google et Microsoft utilisent la plupart du temps des photos de paysages, de forêts, etc.
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="slider__item">
-                            <figure>
-                                <img class="slider__img"
-                                    srcset="assets/images/forest_bathing.jpg 1x,
-                                            assets/images/forest_bathing@2x.jpg 2x"
-                                       src="assets/images/forest_bathing.jpg"
-                                       alt="Photo illustrant la thérapie forestière">
-                                <figcaption class="caption"> Des thérapies forestières sont organisées au&nbsp;Japon&nbsp;et&nbsp;en&nbsp;Corée&nbsp;du&nbsp;Sud.</figcaption>
-                            </figure>
-                        </li>
-                        <li class="slider__item">
-                            <figure>
-                                <img class="slider__img"
-                                    srcset="assets/images/munich_park.jpg 1x,
-                                            assets/images/munich_park@2x.jpg 2x"
-                                       src="assets/images/munich_park.jpg"
-                                       alt="Photo d'un parc à Munich">
-                                <figcaption class="caption">Projet de renaturation à Munich.</figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                    <div class="section__sideTexts">
-                        <p>
-                            Afin d’avoir conscience de ce qui nous entoure, nous devons adopter une nouvelle façon d'appréhender la nature,
-                            davantage de représentations vraisemblables, des images moins parfaites, plus authentiques. De plus, reconnecter
-                            l’Homme à la nature aurait un impact sur plusieurs domaines et permettrait de vivre certaines expériences d’une manière
-                            différente.
-                        </p>
-                        <ul class="list">
-                            <li class="list__item list__item--regular">Apprentissage plus ludique;&nbsp;</li>
-                            <li class="list__item list__item--regular">améliorer la santé physique et mentale;&nbsp;</li>
-                            <li class="list__item list__item--regular">faire face plus facilement aux traumatismes.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- La nature et la technologie -->
-            <section id="partie2">
-                <div class="section section--bg">
-                    <small class="tiny">Partie II</small>
-                    <h3 class="title title--underline">La nature et<br> la technologie</h3>
-                    <p>
-                        L’Homme seul dans la nature est limité à ce qu’il voit, connaît et croit comprendre, mais avec l’aide de la
-                        technologie, il accède à plus d’informations qui lui offrent la possibilité de mieux appréhender le monde environnant.
-                    </p>
-                </div>
-                <div class="section">
-                    <h4 class="title title--medium">S’orienter vers<br> un système qui unit</h4>
-                    <p>Homme, nature et technologie nous permettrait de récolter toutes sortes de données.</p>
-                    <ul class="slider">
-                        <li class="slider__item">
-                           <figure>
-                               <img class="slider__img"
-                                   srcset="assets/images/animal_tracking.jpg 1x,
-                                           assets/images/animal_tracking@2x.jpg 2x"
-                                      src="assets/images/animal_tracking.jpg"
-                                      alt="Puce GPS installée sur une abeille">
-                               <figcaption class="caption">
-                                   Tracking d’animaux à l’aide de puces GPS, qui permettent de visualiser leurs déplacements sur une carte, voir leurs habitudes, etc.
-                               </figcaption>
-                           </figure>
-                        </li>
-                        <li class="slider__item">
-                            <figure>
-                                <img class="slider__img"
-                                    srcset="assets/images/vr_exploration.jpg 1x,
-                                            assets/images/vr_exploration@2x.jpg 2x"
-                                        src="assets/images/vr_exploration.jpg"
-                                        alt="Vision d'un animal au moyen de la VR">
-                                <figcaption class="caption">
-                                    Explorations d’un milieu via VR&#8239;/&#8239;AR (Virtual Reality et Augmented Reality), dans le style Google Maps.
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="slider__item">
-                            <figure>
-                                <img class="slider__img"
-                                    srcset="assets/images/plants_scanning.jpg 1x,
-                                            assets/images/plants_scanning@2x.jpg 2x"
-                                       src="assets/images/plants_scanning.jpg"
-                                       alt="Application de scanning reconnaisant les plantes">
-                                <figcaption class="caption">
-                                    Reconnaissance visuelle et sonore, pour identifier des cris d’animaux, certaines espèces de plantes, etc.
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                    <p>
-                        Les technologies présentées dans les exemples ci-dessus génèrent et complètent des bases de données scientifiques,
-                        grâce auxquelles les designers et ingénieurs peuvent contribuer au bien-être de l’humanité.
-                    </p>
-                </div>
-                <div class="section section--bg section--bgOrange">
-                    <div class="section__sideTexts">
-                        <p>
-                            Une amélioration de la technique nous donnerait l’occasion de comprendre la nature et d'agir en conséquence. De ce
-                            fait, les intelligences artificielles rendent possibles des analyses détaillées de la faune comme de la flore sans
-                            l’intervention humaine.
-                        </p>
-                        <p>
-                            Au premier abord, Internet ne semble pas quelque chose de naturel, cependant, il s’agit bien d’un réseau organique, une
-                            version synthétique de la nature en réorganisation continue. Internet peut être acteur d’un futur écosystème où les
-                            humains, la nature et la technologie sont unis.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- La technologie et l’Homme -->
-            <section id="partie3">
-                <div class="section section--bg section--bgGreen chapter31">
-                    <small class="tiny">Partie III</small>
-                    <h3 class="title title--underline">La technologie<br> et l’Homme</h3>
-                    <blockquote class="quote">
-                        <p class="quote__content">
-                            Our computers should be like our childhood, an invisible foundation that is quickly forgotten, but always with us and
-                            effortlessly used throughout our lives.&#8239;&rdquo;
-                        </p>
-                        <cite>&mdash;&nbsp;Mark Weiser</cite>
-                    </blockquote>
-                </div>
-                <div class="section">
-                    <figure class="imgOverflow">
-                        <img class="imgOverflow__item"
-                            srcset="assets/images/google_assistant.png 1x,
-                                    assets/images/google_assistant@2x.png 2x"
-                               src="assets/images/google_assistant.png"
-                               alt="Exemple d'interaction avec Google Assistant">
-                        <figcaption class="caption">Intéraction avec Google Assistant.</figcaption>
-                    </figure>
-                    <div class="section__sideTexts">
-                        <p>
-                            Les côtés néfastes de la technologie nous ont absorbés et isolés de la nature, impactant notre vie. Alors qu’elle
-                            devrait nous permettre de mieux comprendre le monde qui nous entoure et d’éveiller notre curiosité. C’est pourquoi la
-                            technique nous permettrait de rétablir un équilibre entre la nature et l’Homme nous rendant un sentiment de bien-être
-                            et dispensant les générations futures des mauvais côtés des technologies.
-                        </p>
-                        <p>
-                            Afin de rétablir cet équilibre, la technologie devrait être capable d'agir en fonction de l’environnement, du contexte
-                            ou de nos habitudes en intervenant sur ce qui nous entoure et en s’adaptant pour privilégier ce qui est nécessaire.
-                            Mettre de côté tous les éléments sujets à distraction et proposer des applications appropriées aux contextes dans
-                            lesquels se trouve l’utilisateur. Une interface utilisant cette technologie serait un élément bénéfique et
-                            indispensable à notre quotidien.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!--L’Homme, la nature et la technologie -->
-            <section id="conclusion">
-                <div class="section section--bg">
-                    <small class="tiny">Conclusion</small>
-                    <h3 class="title title--underline">L’Homme, <br> la nature et <br> la technologie</h3>
-                    <p>
-                        Ces dernières années, nous avons été déconnectés de la nature au profit de la technologie, pourtant, il s’agit bien
-                        d’une chose essentielle dans la vie de tout individu. Elle nous permet de mieux comprendre le monde qui nous entoure et
-                        nous apporte santé et bien-être. Ainsi, retrouver un équilibre entre l’Homme et la nature est possible grâce aux
-                        technologies.
-                    </p>
-                </div>
-                <div class="section conclusion">
-                    <div class="section__sideTexts">
-                        <p>
-                            Voilà pourquoi, un nouvel écosystème réunissant Homme, nature et technologie, aurait un impact bénéfique sur la plupart
-                            des aspects quotidiens de l’Homme. Il faudrait développer une technique mettant en avant un contenu intelligent et
-                            adapter aux besoins de l’utilisateur, se basant sur ses habitudes de vie, son environnement et le contexte dans lequel
-                            il évolue. 
-                        </p>  
-                        <p> 
-                            De plus, ce contenu devrait arriver sans intrusion et au moment opportun, permettant ainsi à l’Homme de
-                            rester concentré sur ses tâches et surtout de ne pas avoir une vie constamment monopolisée par les technologies. Il
-                            aurait de ce fait, des possibilités plus grandes, l’occasion de s’émanciper et un meilleur rapport avec la nature.
-                        </p>
-                    </div>
-                    <strong class="conclusion__memorize">
-                        Nous devons développer les technologies avec et autour de la nature, ce n’est pas à elle de s’adapter, c’est à nous de
-                        l’adopter.
-                    </strong>
-                     <ul class="buttonsNextTo">
-                        <li class="buttonsNextTo__item"><a class="link link--white link--box" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/251356531">Voir la conférence</a></li>
-                        <li class="buttonsNextTo__item"><a class="link link--box link--bordered link--orange" href="#accueil">Retour en haut</a></li>
-                     </ul>
-                </div>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer class="section section--bg section--bgGreen">
-            <noscript class="upList upList--noscript">
-                <ul>
-                    <li class="upList__item"><a class="link link--pink" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a></li>
-                    <li class="upList__item"><a class="link link--pink" href="html/abstract.html">Abstract</a></li>
-                    <li class="upList__item"><a class="link link--pink" href="html/credits.html">Crédits</a></li>
-                </ul>
-            </noscript>
-            <ul class="upList">
-                <li class="upList__item">Réalisé avec &hearts;</li>
-                <li class="upList__item">Par <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
-                <li class="upList__item"><a class="link link--pink" target="_blank" rel="noopener noreferrer" href="http://www.dwm.re">DWM</a> &#124; <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="https://www.heaj.be">HEAJ</a> &copy;</li>
+            <figcaption class="caption">La nature vue par l’artiste Caspar&nbsp;David&nbsp;Friedrich.</figcaption>
+          </figure>
+          <p>
+            L’Homme est influencé par la nature, c’est à dire le monde physique, l’univers, l’ensemble des choses et des êtres qui l’entourent. Pour lui, la nature est synonyme de bien-être
+            élémentaire. Elle joue un rôle sur son comportement et ses capacités, ses émotions et sentiments sont affectés lorsqu’il est dans la nature.
+          </p>
+        </div>
+        <div class="section section--bg section--bgGreen">
+          <h4 class="title title--medium">Une influence<span class="lineBreak lineBreak--notDesktop"></span> comprise<span class="lineBreak"></span> par plusieurs sociétés</h4>
+          <ul class="slider">
+            <li class="slider__item">
+              <figure>
+                <img
+                  class="slider__img"
+                  srcset="assets/images/wallpaper_macos.jpg 1x, assets/images/wallpaper_macos@2x.jpg 2x"
+                  src="assets/images/wallpaper_macos.jpg"
+                  alt="Fond d'écran MacOS Mojave"
+                />
+                <figcaption class="caption">
+                  Apple, Google et Microsoft utilisent la plupart du temps des photos de paysages, de forêts, etc.
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slider__item">
+              <figure>
+                <img
+                  class="slider__img"
+                  srcset="assets/images/forest_bathing.jpg 1x, assets/images/forest_bathing@2x.jpg 2x"
+                  src="assets/images/forest_bathing.jpg"
+                  alt="Photo illustrant la thérapie forestière"
+                />
+                <figcaption class="caption">Des thérapies forestières sont organisées au&nbsp;Japon&nbsp;et&nbsp;en&nbsp;Corée&nbsp;du&nbsp;Sud.</figcaption>
+              </figure>
+            </li>
+            <li class="slider__item">
+              <figure>
+                <img class="slider__img" srcset="assets/images/munich_park.jpg 1x, assets/images/munich_park@2x.jpg 2x" src="assets/images/munich_park.jpg" alt="Photo d'un parc à Munich" />
+                <figcaption class="caption">Projet de renaturation à Munich.</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <div class="section__sideTexts">
+            <p>
+              Afin d’avoir conscience de ce qui nous entoure, nous devons adopter une nouvelle façon d'appréhender la nature, davantage de représentations vraisemblables, des images moins
+              parfaites, plus authentiques. De plus, reconnecter l’Homme à la nature aurait un impact sur plusieurs domaines et permettrait de vivre certaines expériences d’une manière
+              différente.
+            </p>
+            <ul class="list">
+              <li class="list__item list__item--regular">Apprentissage plus ludique;&nbsp;</li>
+              <li class="list__item list__item--regular">améliorer la santé physique et mentale;&nbsp;</li>
+              <li class="list__item list__item--regular">faire face plus facilement aux traumatismes.</li>
             </ul>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </section>
+      <section id="partie2">
+        <div class="section section--bg">
+          <small class="tiny">Partie II</small>
+          <h3 class="title title--underline">
+            La nature et<span class="lineBreak"></span>
+            la technologie
+          </h3>
+          <p>
+            L’Homme seul dans la nature est limité à ce qu’il voit, connaît et croit comprendre, mais avec l’aide de la technologie, il accède à plus d’informations qui lui offrent la
+            possibilité de mieux appréhender le monde environnant.
+          </p>
+        </div>
+        <div class="section">
+          <h4 class="title title--medium">
+            S’orienter vers<span class="lineBreak"></span>
+            un système qui unit
+          </h4>
+          <p class="textCenter">Homme, nature et technologie nous permettrait de récolter toutes sortes de données.</p>
+          <ul class="slider slider--reverse">
+            <li class="slider__item">
+              <figure>
+                <img
+                  class="slider__img"
+                  srcset="assets/images/animal_tracking.jpg 1x, assets/images/animal_tracking@2x.jpg 2x"
+                  src="assets/images/animal_tracking.jpg"
+                  alt="Puce GPS installée sur une abeille"
+                />
+                <figcaption class="caption">
+                  Tracking d’animaux à l’aide de puces GPS, qui permettent de visualiser leurs déplacements sur une carte, voir leurs habitudes, etc.
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slider__item">
+              <figure>
+                <img
+                  class="slider__img"
+                  srcset="assets/images/vr_exploration.jpg 1x, assets/images/vr_exploration@2x.jpg 2x"
+                  src="assets/images/vr_exploration.jpg"
+                  alt="Vision d'un animal au moyen de la VR"
+                />
+                <figcaption class="caption caption--thin">
+                  Explorations d’un milieu via VR&#8239;/&#8239;AR (Virtual Reality et Augmented Reality), dans le style Google Maps.
+                </figcaption>
+              </figure>
+            </li>
+            <li class="slider__item">
+              <figure>
+                <img
+                  class="slider__img"
+                  srcset="assets/images/plants_scanning.jpg 1x, assets/images/plants_scanning@2x.jpg 2x"
+                  src="assets/images/plants_scanning.jpg"
+                  alt="Application de scanning reconnaisant les plantes"
+                />
+                <figcaption class="caption caption--thin">
+                  Reconnaissance visuelle et sonore, pour identifier des cris d’animaux, certaines espèces de plantes, etc.
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <p>
+            Les technologies présentées dans les exemples ci-dessus génèrent et complètent des bases de données scientifiques, grâce auxquelles les designers et ingénieurs peuvent contribuer
+            au bien-être de l’humanité.
+          </p>
+        </div>
+        <div class="section section--bg section--bgOrange">
+          <div class="section__sideTexts">
+            <p>
+              Une amélioration de la technique nous donnerait l’occasion de comprendre la nature et d'agir en conséquence. De ce fait, les intelligences artificielles rendent possibles des
+              analyses détaillées de la faune comme de la flore sans l’intervention humaine.
+            </p>
+            <p>
+              Au premier abord, Internet ne semble pas quelque chose de naturel, cependant, il s’agit bien d’un réseau organique, une version synthétique de la nature en réorganisation
+              continue. Internet peut être acteur d’un futur écosystème où les humains, la nature et la technologie sont unis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="partie3">
+        <div class="section section--bg section--bgGreen chapter31">
+          <small class="tiny">Partie III</small>
+          <h3 class="title title--underline">
+            La technologie<span class="lineBreak"></span>
+            et l’Homme
+          </h3>
+          <blockquote class="quote">
+            <p class="quote__content">
+              Our computers should be like our childhood, an invisible foundation that is quickly forgotten, but always with us and effortlessly used throughout our lives.
+            </p>
+            <cite>&mdash;&nbsp;Mark Weiser</cite>
+          </blockquote>
+        </div>
+        <div class="section">
+          <figure class="imgOverflow">
+            <img
+              class="imgOverflow__item"
+              srcset="assets/images/google_assistant.png 1x, assets/images/google_assistant@2x.png 2x"
+              src="assets/images/google_assistant.png"
+              alt="Exemple d'interaction avec Google Assistant"
+            />
+            <figcaption class="caption">Intéraction avec Google Assistant.</figcaption>
+          </figure>
+          <div class="section__sideTexts">
+            <p>
+              Les côtés néfastes de la technologie nous ont absorbés et isolés de la nature, impactant notre vie. Alors qu’elle devrait nous permettre de mieux comprendre le monde qui nous
+              entoure et d’éveiller notre curiosité. C’est pourquoi la technique nous permettrait de rétablir un équilibre entre la nature et l’Homme nous rendant un sentiment de bien-être
+              et dispensant les générations futures des mauvais côtés des technologies.
+            </p>
+            <p>
+              Afin de rétablir cet équilibre, la technologie devrait être capable d'agir en fonction de l’environnement, du contexte ou de nos habitudes en intervenant sur ce qui nous
+              entoure et en s’adaptant pour privilégier ce qui est nécessaire. Mettre de côté tous les éléments sujets à distraction et proposer des applications appropriées aux contextes
+              dans lesquels se trouve l’utilisateur. Une interface utilisant cette technologie serait un élément bénéfique et indispensable à notre quotidien.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="conclusion">
+        <div class="section section--bg">
+          <small class="tiny">Conclusion</small>
+          <h3 class="title title--underline">
+            L’Homme, <span class="lineBreak"></span> la nature et <span class="lineBreak"></span>
+            la technologie
+          </h3>
+          <p>
+            Ces dernières années, nous avons été déconnectés de la nature au profit de la technologie, pourtant, il s’agit bien d’une chose essentielle dans la vie de tout individu. Elle
+            nous permet de mieux comprendre le monde qui nous entoure et nous apporte santé et bien-être. Ainsi, retrouver un équilibre entre l’Homme et la nature est possible grâce aux
+            technologies.
+          </p>
+        </div>
+        <div class="section conclusion">
+          <div class="section__sideTexts">
+            <p>
+              Voilà pourquoi, un nouvel écosystème réunissant Homme, nature et technologie, aurait un impact bénéfique sur la plupart des aspects quotidiens de l’Homme. Il faudrait
+              développer une technique mettant en avant un contenu intelligent et adapter aux besoins de l’utilisateur, se basant sur ses habitudes de vie, son environnement et le contexte
+              dans lequel il évolue.
+            </p>
+            <p>
+              De plus, ce contenu devrait arriver sans intrusion et au moment opportun, permettant ainsi à l’Homme de rester concentré sur ses tâches et surtout de ne pas avoir une vie
+              constamment monopolisée par les technologies. Il aurait de ce fait, des possibilités plus grandes, l’occasion de s’émanciper et un meilleur rapport avec la nature.
+            </p>
+          </div>
+          <strong class="conclusion__memorize">
+            Nous devons développer les technologies avec et autour de la nature, ce n’est pas à elle de s’adapter, c’est à nous de l’adopter.
+          </strong>
+          <ul class="buttonsNextTo">
+            <li class="buttonsNextTo__item"><a class="link link--white link--box" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/251356531">Voir la conférence</a></li>
+            <li class="buttonsNextTo__item"><a class="link link--box link--bordered link--orange" href="#accueil">Retour en haut</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="section section--bg section--bgGreen">
+      <noscript class="upList upList--noscript">
+        <ul>
+          <li class="upList__item">
+            <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="https://medium.com/@dosbenjamin/iolce-case-study-e0cee362eda">Case Study</a>
+          </li>
+          <li class="upList__item"><a class="link link--pink" href="abstract.html">Abstract</a></li>
+          <li class="upList__item"><a class="link link--pink" href="credits.html">Crédits</a></li>
+        </ul>
+      </noscript>
+      <ul class="upList">
+        <li class="upList__item">Réalisé avec &hearts;</li>
+        <li class="upList__item">Par <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="http://benjamindossantos.be">Benjamin Dos Santos</a></li>
+        <li class="upList__item">
+          <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="http://www.dwm.re">DWM</a> &#124;
+          <a class="link link--pink" target="_blank" rel="noopener noreferrer" href="https://www.heaj.be">HEAJ</a> &copy;
+        </li>
+      </ul>
+    </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://benjamindossantos.be",
+              "name": "Benjamin Dos Santos"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://benjamindossantos.be/projets",
+              "name": "Projets"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://benjamindossantos.be/projets/iolce",
+              "name": "IOLCE"
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
 </html>

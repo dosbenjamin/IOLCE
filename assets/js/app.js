@@ -1,11 +1,11 @@
-//Menu Opening
+// Menu Opening
 const burger = document.querySelector('.navBar__burger');
 const menu = document.querySelector('.menu');
 const menuLinks = document.querySelectorAll('.menu .upList__item');
 const body = document.querySelector('body');
 const logo = document.querySelector('.navBar__logo');
 const desktopNav = document.querySelector('.navBar__menuDesktop');
-(burger).addEventListener('click', function () {
+burger.addEventListener('click', function () {
 	menu.classList.toggle('menu--open');
 	body.classList.toggle('noscroll');
 	burger.classList.toggle('navBar__burger--open');
